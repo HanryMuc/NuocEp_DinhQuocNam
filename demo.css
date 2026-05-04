@@ -1,0 +1,91 @@
+:root {
+    --orange: #f7941d;
+    --green: #21a038;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Header */
+.logo-img { height: 50px; }
+.nav-box {
+    background-color: #f1f1f1;
+    color: var(--orange) !important;
+    text-align: center;
+    margin-left: 4px;
+    padding: 8px 12px !important;
+    font-size: 11px;
+    font-weight: bold;
+    min-width: 80px;
+}
+.nav-box.active {
+    background-color: var(--orange);
+    color: white !important;
+}
+
+/* Hero Section quan trọng nhất */
+.hero-section {
+    background-color: var(--orange);
+}
+
+.hero-white-card {
+    background: white;
+    padding: 30px;
+    /* Bo góc kiểu quả trứng như mẫu */
+    border-radius: 80px 80px 80px 0; 
+    max-width: 500px; /* Khống chế không cho nó quá rộng */
+    margin: 0 auto;  /* Căn giữa */
+}
+
+.orange-text { color: var(--orange); }
+
+/* Section Title */
+.section-title {
+    color: var(--orange);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+/* News & Events */
+.news-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    padding: 3px;
+}
+
+.date-tag {
+    background-color: #ccc;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 15px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* Footer */
+.footer-custom {
+    background-color: var(--green);
+    color: white;
+}
+
+/* KHI THU NHỎ (MOBILE) */
+@media (max-width: 768px) {
+    .hero-white-card {
+        border-radius: 40px;
+        padding: 20px;
+        text-align: center;
+    }
+    .news-card {
+        flex-direction: column; /* Trên mobile, ảnh nằm trên chữ */
+        text-align: center;
+    }
+    .news-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
